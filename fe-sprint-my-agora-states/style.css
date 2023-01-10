@@ -1,0 +1,105 @@
+/* TODO: 보기 좋은 나만의 아고라 스테이츠를 위해서 CSS를 수정하세요. */
+:root {
+--main-bg-color : #EEF1FF;
+--head-color : #B1B2FF;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #AAC4FF;
+}
+
+.form__container {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+}
+
+/* 리스트 컨테이너 */
+li.discussion__container {
+    display: flex;
+    width : 540px;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 10px;
+    padding: 10px;
+    /* border-radius: 10px; */
+    background: rgba( 238, 241, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7px );
+-webkit-backdrop-filter: blur( 7px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.discussion__container > div {
+    margin: 7px;
+}
+/* 왼쪽 컨텐츠 */
+div.discussion__avatar--wrapper{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    flex-grow: 0;
+
+}
+    /* 아바타 사진 */
+.discussion__avatar--image {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 가운데 컨텐츠 */
+
+.discussion__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.discussion__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 18px;
+}
+
+.discussion__information {
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* 오른쪽 컨텐츠 */
+.discussion__answered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+}
+
+p {
+    font-size: 30px;
+}
